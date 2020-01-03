@@ -14,7 +14,6 @@
 
     <style>
         #human-heart {
-            /* margin: 5em; */
             margin-top: 10px;
             animation: .8s infinite beatHeart;
         }
@@ -44,19 +43,58 @@
 </head>
 
 <body>
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to fembucha,</h1>
-        <p class="lead">a response to me too's call</p>
-        <hr class="my-4">
-        <h3>fembucha</h3>
-        <p>n.	A feminist metakombucha.</p>
-        <p>n.	A probiotic e-drink that challenges gender norms and inequality to ameliorate a societal gut that hosts rape culture.</p>
+    <div class="main">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to fembucha,</h1>
+            <p class="lead">a response to me too's call</p>
+            <hr class="my-4">
+            <h3>fembucha</h3>
+            <p>n. A feminist kombucha.</p>
+            <p>n. A probiotic e-drink which ameliorates a societal gut that hosts rape culture.</p>
 
-        <p class="lead">
-            <a id="human-heart" class="btn btn-primary btn-lg" href="#" role="button">open the fembucha fridge</a>
-        </p>
+            <p class="lead">
+                <a id="human-heart" class="btn btn-primary btn-lg" href="#" role="button" onclick="openFridge()">open
+                    the fembucha fridge</a>
+            </p>
+        </div>
+        <div class="fridge">
+            <div class="container">
+                <h3 style="margin-top: 5%">half the sky hibiscus (25 factual oz)</h3>
+                <h4>excerpts from Half the Sky by Sheryl WuDunn and Nicholas Kristof</h4>
+                <iframe width="100%" height="265" src="https://clyp.it/cp1wv10m/widget" frameborder="0"></iframe>,
+                <h3>intersectional berry (44 factual oz)</h3>
+                <iframe width="100%" height="265" src="https://clyp.it/1ne5cznj/widget" frameborder="0"></iframe>,
+                <h3>pushout pineapple (24 factual oz)</h3>
+                <h4>excerpts from Pushout by Monique Morris</h4>
+                <iframe width="100%" height="265" src="https://clyp.it/d4rd5mpe/widget" frameborder="0"></iframe>,
+                <h3>moment of lift mango (10 factual oz)</h3>
+                <h4>excerpts from Moment of Lift by Melinda Gates</h4>
+                <iframe width="100%" height="265" src="https://clyp.it/10agr5ti/widget" frameborder="0"></iframe>,
+                <h3>falsettacapella - breathe (2am)</h3>
+                <iframe width="100%" height="265" src="https://clyp.it/ytqr14rh/widget" frameborder="0"></iframe>,
+                <h3>falsettacapella - thank u, next</h3>
+                <iframe width="100%" height="265" src="https://clyp.it/c4g3m52g/widget" frameborder="0"></iframe>,
+                <h3>falsettacapella - i feel it coming</h3>
+                <iframe width="100%" height="265" src="https://clyp.it/xs4tjmmb/widget" frameborder="0"></iframe>
+            </div>
+        </div>
     </div>
 </body>
+
+<script>
+
+    onload($(".fridge").hide());
+
+    function openFridge() {
+        // show trigger warning
+        alert("Fembucha contains trace amounts of triggering material (mostly related to sexual violence). Please drink responsibly.");
+        // hide jumbotron
+        $(".jumbotron").hide();
+        // show fridge
+        $(".fridge").show();
+    }
+
+</script>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
